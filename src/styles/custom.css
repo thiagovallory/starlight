@@ -1,0 +1,29 @@
+/* Dark mode colors. */
+:root {
+	--sl-color-accent-low: #3e1600; //color text active in sidebar
+	--sl-color-accent: #a94900;
+	--sl-color-accent-high: #f97316; //highlight color
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #e8eef8;
+	--sl-color-gray-2: #bcc2cf; //text page and sidebar
+	--sl-color-gray-3: #7f8ca3;
+	--sl-color-gray-4: #4d586e;
+	--sl-color-gray-5: #2e384c; //lines sidebar and search
+	--sl-color-gray-6: #1d273a; //background sidebar
+	--sl-color-black: #141821; //background page
+}
+/* Light mode colors. */
+:root[data-theme='light'] {
+	--sl-color-accent-low: #fdcab1; 
+	--sl-color-accent: #f97316; //highlight color
+	--sl-color-accent-high: #542100; 
+	--sl-color-white: #141821; //titles page, sidebar and on this page
+	--sl-color-gray-1: #1d273a; //text button change mode(light/dark)
+	--sl-color-gray-2: #2e384c; //text page and sidebar
+	--sl-color-gray-3: #4d586e; //text anchor links on this page
+	--sl-color-gray-4: #7f8ca3; 
+	--sl-color-gray-5: #bcc2cf; //line search and top bar
+	--sl-color-gray-6: #e8eef8; //lines
+	--sl-color-gray-7: #f4f6fc; //background top sidebar
+	--sl-color-black: #ffffff; //background page
+}
