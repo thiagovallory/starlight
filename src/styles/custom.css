@@ -27,3 +27,7 @@
 	--sl-color-gray-7: #f4f6fc; //background top sidebar
 	--sl-color-black: #ffffff; //background page
 }
+
+p {
+	text-align: justify;
+}

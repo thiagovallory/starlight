@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'CVA',
+			title: ' ',
 			logo: {
         src: './src/assets/logo.svg',
       },
@@ -14,29 +14,33 @@ export default defineConfig({
         // Relative path to your custom CSS file
         './src/styles/custom.css',
       ],
-			social: {
-				github: 'https://github.com/cva-plugin/cva',
-				discord: 'https://discord.gg/W3MfaawZeH',
-				'x.com': 'https://x.com/cva_design',
-				threads: 'https://www.threads.net/@cva_design',
-			},
+			// social: {
+			// 	github: 'https://github.com/cva-plugin/cva',
+			// 	discord: 'https://discord.gg/W3MfaawZeH',
+			// 	'x.com': 'https://x.com/cva_design',
+			// 	threads: 'https://www.threads.net/@cva_design',
+			// },
+			components: {
+        // Substitui o componente padrão `SocialIcons`.
+        SocialIcons: './src/components/SocialIcons.astro',
+      },
 			sidebar: [
+				{
+					label: 'Legal',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Privacy Policy', slug: 'index' },
+						{ label: 'Terms and Conditions', slug: 'terms' },
+					],
+				},
 				// {
-				// 	label: 'Guides',
-				// 	items: [
-				// 		// Each item here is one entry in the navigation menu.
-				// 		{ label: 'Example Guide', slug: 'guides/example' },
-				// 		{ label: 'Example Guide 2', slug: 'guides/example' },
-				// 	],
+				// 	label: 'Privacy Policy',
+				// 	autogenerate: { directory: 'privacy' },
 				// },
-				{
-					label: 'Privacy Policy',
-					autogenerate: { directory: 'privacy' },
-				},
-				{
-					label: 'Terms and Conditions',
-					autogenerate: { directory: 'terms' },
-				},
+				// {
+				// 	label: 'Terms and Conditions',
+				// 	autogenerate: { directory: 'terms' },
+				// },
 				{
 					label: 'Report a vulnerability',
 					items: [
